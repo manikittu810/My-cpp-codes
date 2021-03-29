@@ -1,5 +1,6 @@
 #include "bits/stdc++.h"
 using namespace std;
+// recursive implmentation, time complexity = exponential 
 int fib(int n)
 {
     if(n<=1)
