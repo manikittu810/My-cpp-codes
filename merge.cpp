@@ -1,9 +1,6 @@
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
-
-
-
 void merge(int a[],int lo,int mid,int hi)
 {
     int p1,p2;

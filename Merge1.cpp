@@ -20,12 +20,24 @@ using namespace std;
         while(j<=hi)
             b[k++]=a[j++];
         for (int x=0;x<k;x++)
+            {
             a[lo+x]=b[x];
-        
-    }
-     void MS(int a[],int lo,int hi)
+            }
+            }
+            void printArray(int a[],int l,int n,int h)
+{
+    for(int i=0;i<n;i++)
     {
-        if(lo==hi) return;
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
+}
+     void  MS(int a[],int lo,int hi)
+    {
+        if(lo>=hi) 
+        {
+            return ;
+            }
         int mid=(lo+hi)/2;
         MS(a,lo,mid);
         MS(a,mid+1,hi);
@@ -40,6 +52,6 @@ int main()
     {
         cin>>a[i];
     }
-    cout<<MS(a,0,N-1);
+    MS(a,0,N-1);
     return 0;
 }
